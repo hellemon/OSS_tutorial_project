@@ -22,7 +22,7 @@ const rtm = new RTMClient(token);
 let res;
 
 let runmmdd;
-
+// 난수 값으로 접근
 for (let i = 0; i < 5; i += 1) {
   runmmdd = `${Math.floor(Math.random() * 11) + 1}/${Math.floor(
     Math.random() * 31
@@ -34,7 +34,7 @@ describe("feature2 test", async () => {
     res = await haksa(rtm, channel, runmmdd);
     return res;
   });
-
+  
   it("학사 일정 테스트", (done) => {
     console.log(res);
     assert.equal(res, "success");
