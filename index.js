@@ -28,6 +28,7 @@ rtm.on("message", (message) => {
   const { text } = message;
   
   // switch문 정규식 사용을 위한 테스트 변경
+  // switch문을 사용하여 각 모드를 입력 받았을때 마다 flag지정 및 질문에 대한 답변
   switch (true) {
     case flags === 1:
       dept.fsdept(rtm, channel, text);
