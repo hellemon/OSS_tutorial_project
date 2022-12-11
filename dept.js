@@ -69,7 +69,6 @@ const fsdept = function (rtm, channel, text) {
 };
 
 // line-reader 버전
-
 const classResult = [
   "College of Engineering Building 1, 132",
   "College of Engineering Building 4, 212",
@@ -89,7 +88,6 @@ try {
 }
 
 const resultFunction = function (rtm, text, index, channel) {
-  // console.log("check classroom");
   try {
     const resultText = classResult[index];
     console.log(resultText);
